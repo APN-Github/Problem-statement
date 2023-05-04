@@ -1,6 +1,2 @@
 # Problem-statement
 working to craft a problem statement and trying to clarify the problem space to be addressed
-
-==================
-
-In a network operator controlled domain, the ingress edge devices usually have access to much richer information, such as VLAN/QinQ, VPN, and access interface, which is used to classify the packets into fine granular virtual groups of flows at the edge. However, after the packets enter the network operator’s domain, all such information is lost together with the continuous fine granularity within the network. Indeed, the information is mapped into small fields like DSCP (6 bits) or MPLS EXP (3 bits). However, such small fields are only able to provide relatively coarse grained QoS treatment. The packet treatments needed may vary at different parts of the packet’s path within the domain, and enough information is needed to determine these treatments. Thus, the continuous fine grained network services within the network domain cannot be provided efficiently. This information can be carried directly in the packet or achieved through a mapping from an opaque tag. Existing protocols such as SFC/NSH, SR/SRv6, MPLS, VXLAN, and IPv6, can be taken as implementation basis, but in each case the protocol may need extensions.
